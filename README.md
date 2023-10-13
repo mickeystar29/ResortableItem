@@ -19,6 +19,10 @@ php artisan config:cache<br />
 
 ### Mysql
 DB_NAME: coalition_test
+### Migration
+php artisan migrate
+### Generate items as default
+php artisan db:seed
 
 ## Run server on local
 php artisan serve
