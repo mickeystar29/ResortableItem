@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/tasks', [TaskController::class, 'index']);
-Route::post('/tasks/create', [TaskController::class, 'create']);
+Route::get('/', [TaskController::class, 'index']);
+
 Route::post('/tasks/resort', [TaskController::class, 'resort'])->name('tasks.resort');
+Route::get('/project/{id}/tasks', [TaskController::class, 'listByProject']);
+Route::resource('/tasks', TaskController::class);

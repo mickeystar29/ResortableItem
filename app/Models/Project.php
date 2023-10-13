@@ -14,6 +14,6 @@ class Project extends Model
     public $timestamps = false;
 
     public function tasks() {
-        return $this->hasMany(Task::class)->orderBy('priority', 'asc')->get();
+        return $this->hasMany(Task::class)->orderBy('priority', 'asc')->orderBy('id', 'desc')->get();
     }
 }

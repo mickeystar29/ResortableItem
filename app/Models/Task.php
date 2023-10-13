@@ -16,4 +16,8 @@ class Task extends Model
     ];
     protected $hidden = ['updated_at'];
 
+    public function project() {
+        return $this->belongsTo(Project::class);
+    }
+
 }
