@@ -3,6 +3,11 @@ It's a Laravel project that shows items by project and resort and store them.
 
 ## Install
 
+### PHP
+version: ^8.0
+### Laravel
+version: ^9.0
+
 ### Install composer
 composer install
 
