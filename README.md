@@ -7,13 +7,13 @@ It's a Laravel project that shows items by project and resort and store them.
 composer install
 
 ### Install npm
-npm install
+npm install<br />
 npm run dev
 
 ## Env
-copy .env.example .env
-php artisan key:generate
-php artisan config:cache
+copy .env.example .env<br />
+php artisan key:generate<br />
+php artisan config:cache<br />
 
 ## Database
 
